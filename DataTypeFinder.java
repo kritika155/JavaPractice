@@ -30,18 +30,7 @@ public class DataTypeFinder {
                 System.out.printf("%s is integer type%n", input);
 				
                 int integer = Integer.parseInt(input); //boolean is still true if it works
-				temp=integer;
-		  while(integer>0){    
-		  remainder=integer%10;  //getting remainder  
-		  reverse=(reverse*10)+remainder;    
-		  integer=integer/10;    
-  }  
-		if(reverse==temp){
-			System.out.println("Palindrome");
-		}
-		else{
-			System.out.println("Not Palindrome");
-		}
+			
             } else if (isDouble) {
                 System.out.printf("%s is floating point type%n", input);
             } else if (input.length() == 1) { //this could be useless depending on your case
@@ -50,15 +39,7 @@ public class DataTypeFinder {
                 System.out.printf("%s is boolean type%n", input);
             } else {
                 System.out.printf("%s is string type%n", input);
-					length=input.length();
-		      for ( int i = length - 1; i >= 0; i-- ) 
-			  {				  
-         reverseStr = reverseStr + input.charAt(i);  
-  }  
-		if(input.equals(reverseStr))    
-   System.out.println("palindrome string ");    
-  else    
-   System.out.println("not palindrome string");    
+					length=input.length();    
 	
             }
         
