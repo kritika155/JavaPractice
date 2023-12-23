@@ -1,0 +1,28 @@
+package StringExample;
+import java.util.Scanner;
+public class PalindromeExample {
+	public static void main(String[] args) {
+		String str="madam";
+		System.out.println(str);
+		char ch[]=new char[str.length()];
+		char rev[]=new char[str.length()];
+
+		int j=0;
+		int length=str.length();
+		while(j<length) {
+			for(int i=length-1;i>=0;i--) {
+				ch[j]=str.charAt(i);
+				rev[j]=str.charAt(j);
+				j++;
+			}
+		}
+		System.out.println(rev); 
+if(ch==rev) {
+	   System.out.println("palindrome string "); 
+}
+	   else   {
+	    System.out.println("not palindrome string");   
+	   }
+		
+	}
+}

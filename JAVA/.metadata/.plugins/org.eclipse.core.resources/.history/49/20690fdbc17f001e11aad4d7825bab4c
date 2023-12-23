@@ -1,0 +1,25 @@
+package CollectionClass;
+
+public class TestThrowAndThrows  
+{  
+    // defining a user-defined method  
+    // which throws ArithmeticException  
+    public static int method(int m, int n) throws ArithmeticException  
+    {  	        int div = m / n;  
+   
+        System.out.println("Inside the method()");   
+        return div;  
+    }  
+    //main method  
+    public static void main(String args[])  
+    {  
+        try  
+        {  
+        	 System.out.println(method(45,0));  
+        }  
+        catch(ArithmeticException e)  
+        {  
+            System.out.println("caught in main() method");  
+        }  
+    }  
+}  
